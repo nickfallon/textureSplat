@@ -2,9 +2,6 @@
 
 ThreeJS texture splatting class with diffuse, normal and displacement maps.
 
-ThreeJS doesn't have built in texture splatting, and existing examples don't seem to support
-normals, displacement or arbitrary adjascent placement of textures.
-
 The SplatterManager class creates a new standard material with texture splatting.
 The shader is modified using onBeforeCompile to create the splats in one shader.
 
