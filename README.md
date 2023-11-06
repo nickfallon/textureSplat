@@ -1,6 +1,6 @@
 # textureSplat for ThreeJS
 
-ThreeJS texture splatting class with diffuse, normal and displacement maps.
+ThreeJS texture splatting class with diffuse, normal and ORM (ambient occlusion/roughness/metalness) maps.
 
 The SplatterManager class creates a new standard material with texture splatting.
 The shader is modified using onBeforeCompile to create the splats in one shader.
@@ -10,11 +10,13 @@ The shader is modified using onBeforeCompile to create the splats in one shader.
 - green channel mixes textures 3 and 4.
 - blue channel mixes red and green.
 
-Blended textures have their own diffuseMap, normalMap and displacementMap.
+Blended textures have their own diffuseMap, normalMap and ORM maps.
+
+ORM maps contain the following:
+- red channel - ambient occlusion
+- green channel - roughness map
+- blue channel - metalness map
 
 Any texture can be mixed with any other textures without restriction.
 
-##Usage
-
-call SplatterManager.load()
 
