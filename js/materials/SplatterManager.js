@@ -45,8 +45,15 @@ class SplatterManager {
 
         //new texture - load it
         texture = loader.load(path);
-        texture.wrapS = texture.wrapS = THREE.RepeatWrapping;
-        texture.wrapT = texture.wrapT = THREE.RepeatWrapping;
+        texture.mapping = THREE.UVMapping;
+
+        //fix artefacts on edges
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.wrapT = THREE.RepeatWrapping;
+        
+        // texture.magFilter = THREE.NearestFilter;
+        // texture.minFilter = THREE.NearestMipmapNearestFilter;
+
         //push the texture to the pool
         let texture_item = { path: path, tally: 1, texture: texture };
         SplatterManager.texturePool.push(texture_item);
