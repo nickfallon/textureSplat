@@ -28,6 +28,9 @@ This table shows how the mixmap colors relate to a specific texture at any given
 | 3        | blue  #0000FF |
 | 4        | cyan  #00FFFF |
 
+
+### 4-texture shader with diffuse/normal/ORM maps
+
 ![Demo](demo.png)
 
 
@@ -70,6 +73,9 @@ For maximum compatibility, ORM maps have been dropped to meet the 16 texture lim
 
 Since 7 pseudo-materials with one diffuse and one normal is 14 textures, plus 2 mixmaps means all 16 textures are used. 
 
-This image shows 7 textures combined into a single shader with all possible blending combinations:
+This image shows 7 textures combined into a single shader with all possible blending combinations.
+
+
+### 7-texture shader with diffuse/normal maps
 
 ![Demo](demo7.jpg)
