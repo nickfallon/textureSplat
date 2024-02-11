@@ -20,4 +20,20 @@ ORM maps contain the following:
 Any texture can be mixed with any other textures without restriction.
 
 
+## 7-texture variant
+
+The file `SplatterManager_7_materials_normal_diffuse.js` contains a version that combines 
+7 different diffuse and normal maps, no ORM map, and 2 mix maps, as follows:
+
+// mix map 1:
+// R1 -> 1 + 2
+// G1 -> 3 + 4 
+// B1 -> R1 + G1
+
+// mix map 2:
+// R2 -> 5 + 6
+// G2 -> 7 + R2
+// B2 -> G2 + B1
+
+
 ![Demo](demo.png)
