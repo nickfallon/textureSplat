@@ -39,7 +39,7 @@ mix map 2:
 - G2 -> 7 + R2
 - B2 -> G2 + B1
 
-This shader does not include ORM maps because for some GPUS, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader.
+This variant does not include ORM maps because for some GPUS, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader.
 
 Since 7 pseudo-materials with one diffuse and one normal is 14 textures, plus 2 mixmaps means all 16 textures are used. For maximum compatibility, ORM maps have been dropped to meet the 16 texture limit.
 
