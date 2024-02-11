@@ -43,4 +43,4 @@ This variant does not include ORM maps because for some GPU's, renderer.capabili
 
 Since 7 pseudo-materials with one diffuse and one normal is 14 textures, plus 2 mixmaps means all 16 textures are used. For maximum compatibility, ORM maps have been dropped to meet the 16 texture limit.
 
-![Demo](demo7.png)
+![Demo](demo7.jpg)
