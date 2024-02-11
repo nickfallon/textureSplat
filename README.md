@@ -19,6 +19,15 @@ ORM maps contain the following:
 
 Any texture can be mixed with any other textures without restriction.
 
+This table shows how the mixmap colors relate to a specific texture at any given point:
+
+| Material | mixmap1 color |
+| -------- | ------------- |
+| 1        | black #000000 |
+| 2        | red   #ff0000 |
+| 3        | blue  #0000ff |
+| 4        | cyan  #00ffff |
+
 ![Demo](demo.png)
 
 
