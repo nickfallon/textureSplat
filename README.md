@@ -19,6 +19,8 @@ ORM maps contain the following:
 
 Any texture can be mixed with any other textures without restriction.
 
+![Demo](demo.png)
+
 
 ## 7-texture variant
 
@@ -35,5 +37,4 @@ The file `SplatterManager_7_materials_normal_diffuse.js` contains a version that
 // G2 -> 7 + R2
 // B2 -> G2 + B1
 
-
-![Demo](demo.png)
+![Demo](demo7.png)
