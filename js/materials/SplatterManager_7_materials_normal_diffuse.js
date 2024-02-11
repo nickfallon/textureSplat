@@ -298,11 +298,8 @@ class SplatterManager {
                     '#include <normalmap_pars_fragment>',
 
                     `uniform sampler2D normalMap2;`,
-
                     `uniform sampler2D normalMap3;`,
-
                     `uniform sampler2D normalMap4;`,
-
                     `uniform sampler2D normalMap5;`,
                     `uniform sampler2D normalMap6;`,
                     `uniform sampler2D normalMap7;`,

@@ -69,10 +69,10 @@ function init() {
     let material = SplatterManager.load({
         amount: 1.0,
         uv_scale: 1,
-        mixMapFullPath1: `mixmaps/mix1.jpg`,
+        mixMapFullPath1: `mixmaps/mix10.jpg`,
         mix_data1: null,
         mix_texture1: null,
-        mixMapFullPath2: `mixmaps/mix5.jpg`,
+        mixMapFullPath2: `mixmaps/mix11.jpg`,
         mix_data2: null,
         mix_texture2: null,
         texturePath1: `materials/cliff_rock_3`,
@@ -90,7 +90,7 @@ function init() {
     cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
-    camera.position.z = 2;
+    camera.position.z = 1.6;
 
 }
 
@@ -101,14 +101,14 @@ function animate() {
 
     tick++;
 
-    cube.rotation.x += 0.005;
-    cube.rotation.y += 0.005;
+    // cube.rotation.x += 0.005;
+    // cube.rotation.y += 0.005;
 
     renderer.render(scene, camera);
 
     requestAnimationFrame(animate);
 
-    light.position.set(Math.sin(tick * 0.05) * 3, 1, 3);
+    // light.position.set(Math.sin(tick * 0.05) * 3, 1, 3);
 
 }
 
