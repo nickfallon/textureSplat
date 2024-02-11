@@ -39,9 +39,13 @@ mix map 2:
 - G2 -> texture 7 + R2
 - B2 -> G2 + B1
 
-This variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader.
+This variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader. Exceeding this limit can result in the following error:
 
-Since 7 pseudo-materials with one diffuse and one normal is 14 textures, plus 2 mixmaps means all 16 textures are used. For maximum compatibility, ORM maps have been dropped to meet the 16 texture limit.
+`Program Info Log: FRAGMENT shader texture image units count exceeds MAX_TEXTURE_IMAGE_UNITS(16)`
+
+For maximum compatibility, ORM maps have been dropped to meet the 16 texture limit and avoid this error.
+
+Since 7 pseudo-materials with one diffuse and one normal is 14 textures, plus 2 mixmaps means all 16 textures are used. 
 
 This image shows 7 textures combined into a single shader with all possible blending combinations:
 
