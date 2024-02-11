@@ -24,9 +24,9 @@ This table shows how the mixmap colors relate to a specific texture at any given
 | Material | mixmap1 color |
 | -------- | ------------- |
 | 1        | black #000000 |
-| 2        | red   #ff0000 |
-| 3        | blue  #0000ff |
-| 4        | cyan  #00ffff |
+| 2        | red   #FF0000 |
+| 3        | blue  #0000FF |
+| 4        | cyan  #00FFFF |
 
 ![Demo](demo.png)
 
@@ -53,12 +53,12 @@ material to show a specific texture at any given point:
 
 | Material | mixmap1 color | mixmap2 color  |
 | -------- | ------------- | -------------- |
-| 1        | black #000000 | blue   #00ff00 |
-| 2        | red   #ff0000 | blue   #00ff00 |
-| 3        | blue  #0000ff | blue   #00ff00 |
-| 4        | cyan  #00ffff | blue   #00ff00 |
-| 5        | (any)         | green  #00ff00 |
-| 6        | (any)         | yellow #ffff00 |
+| 1        | black #000000 | blue   #00FF00 |
+| 2        | red   #FF0000 | blue   #00FF00 |
+| 3        | blue  #0000FF | blue   #00FF00 |
+| 4        | cyan  #00FFFF | blue   #00FF00 |
+| 5        | (any)         | green  #00FF00 |
+| 6        | (any)         | yellow #FFFF00 |
 | 7        | (any)         | black  #000000 |
 
 
