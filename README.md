@@ -39,6 +39,20 @@ mix map 2:
 - G2 -> texture 7 + R2
 - B2 -> G2 + B1
 
+This table shows how the mixmap colors must be configured in order for the shader
+material to show a specific texture at any given point:
+
+| Material | mixmap1 color | mixmap2 color  |
+| -------- | ------------- | -------------- |
+| 1        | black #000000 | blue   #00ff00 |
+| 2        | red   #ff0000 | blue   #00ff00 |
+| 3        | blue  #0000ff | blue   #00ff00 |
+| 4        | cyan  #00ffff | blue   #00ff00 |
+| 5        | (any)         | green  #00ff00 |
+| 6        | (any)         | yellow #ffff00 |
+| 7        | (any)         | black  #000000 |
+
+
 This variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader. Exceeding this limit can result in the following error:
 
 `Program Info Log: FRAGMENT shader texture image units count exceeds MAX_TEXTURE_IMAGE_UNITS(16)`
