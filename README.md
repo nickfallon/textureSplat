@@ -29,14 +29,14 @@ The file `SplatterManager_7_materials_normal_diffuse.js` contains a version that
 
 mix map 1:
 
-- R1 -> 1 + 2
-- G1 -> 3 + 4 
+- R1 -> textures 1 + 2
+- G1 -> textures 3 + 4 
 - B1 -> R1 + G1
 
 mix map 2:
 
-- R2 -> 5 + 6
-- G2 -> 7 + R2
+- R2 -> textures 5 + 6
+- G2 -> texture 7 + R2
 - B2 -> G2 + B1
 
 This variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader.
