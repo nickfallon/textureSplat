@@ -53,10 +53,10 @@ material to show a specific texture at any given point:
 
 | Material | mixmap1 color | mixmap2 color  |
 | -------- | ------------- | -------------- |
-| 1        | black #000000 | blue   #00FF00 |
-| 2        | red   #FF0000 | blue   #00FF00 |
-| 3        | blue  #0000FF | blue   #00FF00 |
-| 4        | cyan  #00FFFF | blue   #00FF00 |
+| 1        | black #000000 | blue   #0000FF |
+| 2        | red   #FF0000 | blue   #0000FF |
+| 3        | blue  #0000FF | blue   #0000FF |
+| 4        | cyan  #00FFFF | blue   #0000FF |
 | 5        | (any)         | green  #00FF00 |
 | 6        | (any)         | yellow #FFFF00 |
 | 7        | (any)         | black  #000000 |
