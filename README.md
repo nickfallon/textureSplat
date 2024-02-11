@@ -53,7 +53,7 @@ material to show a specific texture at any given point:
 | 7        | (any)         | black  #000000 |
 
 
-This variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader. Exceeding this limit can result in the following error:
+This shader variant does not include ORM maps because for some GPU's, renderer.capabilities.maxTextures yields 16, which means no more than 16 textures can be used in a single shader. Exceeding this limit can result in the following error:
 
 `Program Info Log: FRAGMENT shader texture image units count exceeds MAX_TEXTURE_IMAGE_UNITS(16)`
 
